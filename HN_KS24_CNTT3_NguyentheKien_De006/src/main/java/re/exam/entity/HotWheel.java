@@ -22,6 +22,7 @@ public class HotWheel {
     private Double price;
 
     @Enumerated(EnumType.STRING)
+    @Column(name = "hot_wheel_condition")
     private HotWheelStatus condition = HotWheelStatus.CARDED_MINT;
 
     @Column(name = "is_deleted")
